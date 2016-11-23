@@ -6,7 +6,16 @@ DFLAGS = -pedantic -g -ggdb
 INC = -I includes/ -I libft/includes/
 LFLAGS = -L libft/ -lft -L/usr/local/lib -lmlx -L/usr/lib/X11 -lXext -lX11
 
-FILES = main.c ft_file.c ft_errors.c
+FILES =	main.c\
+		ft_file.c\
+		ft_errors.c\
+		init.c\
+		matrix.c\
+		hooks.c\
+		draw_map.c\
+		draw.c\
+		keys_manager.c\
+		draw_utilities.c\
 
 SRCDIR = src
 OBJDIR = obj

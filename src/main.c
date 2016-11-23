@@ -3,6 +3,25 @@
 #include <mlx.h>
 #include <ft_fc_conversion.h>
 
+void		debug(t_mdata *md)
+{
+	mlx_string_put(md->mptr, md->wptr, md->w - 120, 20, 0xFF0000, "Espace: ");
+	mlx_string_put(md->mptr, md->wptr, md->w - 120, 30, 0xFF0000, "Angle: ");
+	mlx_string_put(md->mptr, md->wptr, md->w - 120, 40, 0xFF0000, "Hauteur: ");
+	mlx_string_put(md->mptr, md->wptr, md->w - 120, 50, 0xFF0000, "X: ");
+	mlx_string_put(md->mptr, md->wptr, md->w - 120, 60, 0xFF0000, "Y: ");
+	mlx_string_put(md->mptr, md->wptr, md->w - 40, 20, 0xFF0000,
+					ft_itoa(md->espace_x));
+	mlx_string_put(md->mptr, md->wptr, md->w - 40, 30, 0xFF0000,
+					ft_itoa(md->angle));
+	mlx_string_put(md->mptr, md->wptr, md->w - 40, 40, 0xFF0000,
+					ft_itoa(md->hauteur));
+	mlx_string_put(md->mptr, md->wptr, md->w - 40, 50, 0xFF0000,
+					ft_itoa(md->x));
+	mlx_string_put(md->mptr, md->wptr, md->w - 40, 60, 0xFF0000,
+					ft_itoa(md->y));
+}
+
 int			main(int ac, char **av)
 {
 	int		**matrix;
