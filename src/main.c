@@ -1,4 +1,8 @@
 
+#include <fdf.h>
+#include <mlx.h>
+#include <ft_fc_conversion.h>
+
 int			main(int ac, char **av)
 {
 	int		**matrix;

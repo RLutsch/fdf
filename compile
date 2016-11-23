@@ -1,1 +1,0 @@
-gcc main.c ft_fdf.h fdf.c -lmlx -framework OpenGL -framework AppKit -L./libft -lft 
