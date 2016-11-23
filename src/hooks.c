@@ -30,31 +30,31 @@ static void		loop_rotate(t_mdata *md, char *check)
 	}
 	if (md->keys->rot_z == 1 && (*check = 1))
 	{
-		if (md->espace_y <= md->espace_x && md->espace_y > -md->espace_x)
-			md->espace_y -= .1;
+		if (md->scale_y <= md->scale_x && md->scale_y > -md->scale_x)
+			md->scale_y -= .1;
 	}
 	else if (md->keys->rot_z == -1 && (*check = 1))
 	{
-		if (md->espace_y >= -md->espace_x - 1 && md->espace_y < md->espace_x)
-			md->espace_y += .1;
+		if (md->scale_y >= -md->scale_x - 1 && md->scale_y < md->scale_x)
+			md->scale_y += .1;
 	}
 }
 
 static void		loop_transform(t_mdata *mdata, char *check)
 {
 	if (mdata->keys->more_height && (*check = 1))
-		mdata->hauteur += .01;
+		mdata->height += .01;
 	else if (mdata->keys->less_height && (*check = 1))
-		mdata->hauteur -= .01;
+		mdata->height -= .01;
 	if (mdata->keys->zoom && (*check = 1))
 	{
-		mdata->espace_x += .1;
-		mdata->espace_y += .1;
+		mdata->scale_x += .1;
+		mdata->scale_y += .1;
 	}
 	else if (mdata->keys->unzoom && (*check = 1))
 	{
-		mdata->espace_x -= .1;
-		mdata->espace_y -= .1;
+		mdata->scale_x -= .1;
+		mdata->scale_y -= .1;
 	}
 }
 

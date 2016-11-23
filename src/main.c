@@ -5,17 +5,17 @@
 
 void		debug(t_mdata *md)
 {
-	mlx_string_put(md->mptr, md->wptr, md->w - 120, 20, 0xFF0000, "Espace: ");
+	mlx_string_put(md->mptr, md->wptr, md->w - 120, 20, 0xFF0000, "Space: ");
 	mlx_string_put(md->mptr, md->wptr, md->w - 120, 30, 0xFF0000, "Angle: ");
-	mlx_string_put(md->mptr, md->wptr, md->w - 120, 40, 0xFF0000, "Hauteur: ");
+	mlx_string_put(md->mptr, md->wptr, md->w - 120, 40, 0xFF0000, "Height: ");
 	mlx_string_put(md->mptr, md->wptr, md->w - 120, 50, 0xFF0000, "X: ");
 	mlx_string_put(md->mptr, md->wptr, md->w - 120, 60, 0xFF0000, "Y: ");
 	mlx_string_put(md->mptr, md->wptr, md->w - 40, 20, 0xFF0000,
-					ft_itoa(md->espace_x));
+					ft_itoa(md->scale_x));
 	mlx_string_put(md->mptr, md->wptr, md->w - 40, 30, 0xFF0000,
 					ft_itoa(md->angle));
 	mlx_string_put(md->mptr, md->wptr, md->w - 40, 40, 0xFF0000,
-					ft_itoa(md->hauteur));
+					ft_itoa(md->height));
 	mlx_string_put(md->mptr, md->wptr, md->w - 40, 50, 0xFF0000,
 					ft_itoa(md->x));
 	mlx_string_put(md->mptr, md->wptr, md->w - 40, 60, 0xFF0000,

@@ -17,10 +17,10 @@ static void		fill_image(t_mdata *mdata, float x, float y, unsigned int color)
 	mdata->idata[r + 2] = (color & 0xFF0000) >> 16;
 	if ((i = 0) || mdata->shadows)
 	{
-		while (++i < mdata->espace_x - 1)
+		while (++i < mdata->scale_x - 1)
 		{
 			j = 0;
-			while (++j < mdata->espace_y - 1)
+			while (++j < mdata->scale_y - 1)
 			{
 				r = (((int)x + i) * 4) + (((int)y + j) * mdata->sizeline);
 				mdata->idata[r] = (0x000000 & 0xFF);

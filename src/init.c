@@ -24,13 +24,13 @@ static t_keys	*init_keys(void)
 	return (keys);
 }
 
-static void		reset_init(t_mdata *mdata, float *espace, float *w, float *h)
+static void		reset_init(t_mdata *mdata, float *scale, float *w, float *h)
 {
-	*espace = ESPACE;
+	*scale = SCALE;
 	*w = 0;
 	*h = 0;
 	mdata->angle = ANGLE;
-	mdata->hauteur = HAUTEUR;
+	mdata->height = HEIGHT;
 	mdata->shadows = 0;
 }
 
@@ -40,9 +40,9 @@ void			reset_values(t_mdata *mdata)
 	float		height;
 	int			i;
 	int			j;
-	float		espace;
+	float		scale;
 
-	reset_init(mdata, &espace, &width, &height);
+	reset_init(mdata, &scale, &width, &height);
 	i = -1;
 	while (mdata->map[++i])
 	{
@@ -52,14 +52,14 @@ void			reset_values(t_mdata *mdata)
 			;
 		width = (j > width ? j : width);
 	}
-	while (width * espace > mdata->w || height * espace > mdata->h)
-		espace--;
-	mdata->espace_x = espace;
-	mdata->espace_y = espace;
+	while (width * scale > mdata->w || height * scale > mdata->h)
+		scale--;
+	mdata->scale_x = scale;
+	mdata->scale_y = scale;
 	mdata->sx = width;
 	mdata->sy = height;
-	mdata->x = (mdata->w / 2) - (width * mdata->espace_x / 2);
-	mdata->y = (mdata->h / 2) - (height * mdata->espace_x / 2);
+	mdata->x = (mdata->w / 2) - (width * mdata->scale_x / 2);
+	mdata->y = (mdata->h / 2) - (height * mdata->scale_x / 2);
 }
 
 int				**ft_init(char *map)

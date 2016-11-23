@@ -1,9 +1,9 @@
 #ifndef FDF_H
 # define FDF_H
 
-# define ESPACE (15)
+# define SCALE (15)
 # define ANGLE (0)
-# define HAUTEUR (1)
+# define HEIGHT (1)
 # define ECHAP (65307)
 # define SPACE (32)
 # define RIGHT (65363)

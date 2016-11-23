@@ -26,10 +26,10 @@ typedef struct		s_mdata
 	int				w;
 	int				h;
 	int				**map;
-	float			espace_x;
-	float			espace_y;
+	float			scale_x;
+	float			scale_y;
 	float			angle;
-	float			hauteur;
+	float			height;
 	float			x;
 	float			y;
 	int				sx;
