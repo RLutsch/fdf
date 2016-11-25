@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   fdf.h                                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rlutsch <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/11/25 10:43:21 by rlutsch           #+#    #+#             */
+/*   Updated: 2016/11/25 14:20:37 by rlutsch          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef FDF_H
 # define FDF_H
 
@@ -95,5 +107,4 @@ t_mdata		*init_mlx(int **map, int userwidth, int userheight);
 */
 int			key_release(int keycode, t_mdata *mdata);
 int			key_press(int keycode, t_mdata *mdata);
-
 #endif

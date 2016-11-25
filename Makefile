@@ -3,8 +3,8 @@ NAME = fdf
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
 DFLAGS = -pedantic -g -ggdb
-INC = -I includes/ -I libft/includes/
-LFLAGS = -L libft/ -lft -L/usr/local/lib -lmlx -L/usr/lib/X11 -lXext -lX11
+INC = -I includes/ -I libft/includes/ -I minilibx_macos/
+LFLAGS = -L libft/ -lft -lmlx -framework OpenGL -framework AppKit
 
 FILES =	main.c\
 		ft_file.c\

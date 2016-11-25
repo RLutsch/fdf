@@ -1,6 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   init.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rlutsch <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/11/25 10:40:33 by rlutsch           #+#    #+#             */
+/*   Updated: 2016/11/25 14:31:25 by rlutsch          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <fdf.h>
+//#include <mlx_int.h>
 #include <mlx.h>
-#include "/usr/include/X11/X.h"
+//#include <X.h>
+#define KeyPressMask (1L<<1)
+#define KeyReleaseMask (1L<<2)
+#define	KeyPress 2
+#define KeyRelease 3
 #include <stdlib.h>
 #include <fcntl.h>
 

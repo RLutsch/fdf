@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_fc_str.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rlutsch <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2016/11/25 10:45:34 by rlutsch           #+#    #+#             */
+/*   Updated: 2016/11/25 10:45:38 by rlutsch          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef FT_FC_STR_H
 # define FT_FC_STR_H
 
@@ -30,5 +42,4 @@ char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_strcleanjoin(char *s1, char const *s2);
 char		*ft_strtrim(char const *s);
 char		**ft_strsplit(char const *s, char c);
-
 #endif
